@@ -263,7 +263,7 @@ Kaggle — це найбільша у світі платформа для Data 
 **Мета:** на реальному наборі даних продемонструвати поняття великих даних, їх характеристики (6V), типи даних та базовий аналіз.
 
 **Набір даних:** Our World in Data — COVID-19 Dataset  
-**Посилання:** https://www.kaggle.com/datasets/owid/covid-19-data  
+**Посилання:** https://www.kaggle.com/datasets/maxdiazbattan/covid-data-worldwide  
 
 ---
 
@@ -477,7 +477,7 @@ plt.show()
 
 - Матеріали Заняття 1.1 (Великі дані)
 - Our World in Data — COVID-19: https://ourworldindata.org/covid-deaths
-- Kaggle COVID-19 Dataset: https://www.kaggle.com/datasets/owid/covid-19-data
+- Kaggle COVID-19 Dataset: https://www.kaggle.com/datasets/maxdiazbattan/covid-data-worldwide
 - Kaggle курс "Pandas": https://www.kaggle.com/learn/pandas
 - Kaggle курс "Data Visualization": https://www.kaggle.com/learn/data-visualization
 - NIST Big Data Interoperability Framework: https://bigdatawg.nist.gov/

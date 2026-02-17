@@ -265,7 +265,8 @@ Kaggle is the world's largest platform for Data Science and machine learning, ow
 **Goal:** demonstrate the concept of big data, its characteristics (6V), data types, and basic analysis using a real dataset.
 
 **Dataset:** Our World in Data — COVID-19 Dataset
-**Link:** https://www.kaggle.com/datasets/owid/covid-19-data
+
+**Link:** https://www.kaggle.com/datasets/maxdiazbattan/covid-data-worldwide
 
 ---
 
@@ -479,7 +480,7 @@ Students fill in a summary table based on the work completed:
 
 - Lesson 1.1 Materials (Big Data)
 - Our World in Data — COVID-19: https://ourworldindata.org/covid-deaths
-- Kaggle COVID-19 Dataset: https://www.kaggle.com/datasets/owid/covid-19-data
+- Kaggle COVID-19 Dataset: https://www.kaggle.com/datasets/maxdiazbattan/covid-data-worldwide
 - Kaggle course "Pandas": https://www.kaggle.com/learn/pandas
 - Kaggle course "Data Visualization": https://www.kaggle.com/learn/data-visualization
 - NIST Big Data Interoperability Framework: https://bigdatawg.nist.gov/
