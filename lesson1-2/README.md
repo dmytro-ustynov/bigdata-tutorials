@@ -1,6 +1,8 @@
 # Lesson 2. Big Data Management Systems
 
-**Discipline:** BIG DATA (Processing of Very Large Data Sets)
+> View [Ukrainian version](README_ua.md)
+
+**Discipline:** BIG DATA (Processing of Very Large Data Sets)        
 
 **Content Module 1:** Big Data Engineering
 
