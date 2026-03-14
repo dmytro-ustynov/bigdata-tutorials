@@ -5,3 +5,5 @@
 [Lesson 2](lesson1-2/README.md) - Big Data Management Systems
 
 [Lesson 3](lesson1-3/README.md) - Big Data Technologies and Data Asset Management
+
+[Lesson 4](lesson1-4/README.md) - Apache Hadoop Ecosystem

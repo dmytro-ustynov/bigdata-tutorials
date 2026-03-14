@@ -117,6 +117,8 @@ graph TB
     style O fill:#f5e1ff
 ```
 
+![img.png](img/img.png)
+
 ### 1.4. Переваги та обмеження MapReduce
 
 **Переваги:**
