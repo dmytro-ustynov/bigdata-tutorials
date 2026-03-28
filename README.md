@@ -9,3 +9,5 @@
 [Lesson 4](lesson1-4/README.md) - Apache Hadoop Ecosystem
 
 [Practical 1.5](lesson1-5/README.md) - Setting Up and Working with Apache Hadoop (6 hours, 10 pts)
+
+[Lesson 5](lesson2-1/README.md) - Apache Spark
