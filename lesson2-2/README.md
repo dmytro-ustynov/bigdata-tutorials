@@ -127,16 +127,25 @@ spark-shell --version
 pyspark --version
 ```
 
-### Path C — Containerized Spark (Windows users with Docker, or anyone who hates installs)
+### Path C — Standalone Jupyter+Spark container (Windows users with Docker, or anyone who hates installs)
 
-Clone the [`spark-tutorial`](https://github.com/dmytro-ustynov/spark-tutorial) repository and use its bundled Jupyter+Spark image. You will use it more deeply in Lesson 2-3.
+Use the official **`quay.io/jupyter/pyspark-notebook`** image from the Jupyter Project — a single container with Python, Java, Spark, and Jupyter Lab pre-installed (~1 GB). No Kafka, Postgres, or other extras you don't need yet.
 
 ```bash
-git clone https://github.com/dmytro-ustynov/spark-tutorial.git
-cd spark-tutorial
-docker compose up -d jupyter
-# Open http://localhost:8888 in your browser
+mkdir -p ~/lesson2-2 && cd ~/lesson2-2
+
+docker run -d --name pyspark-lab \
+  -p 8888:8888 -p 4040:4040 \
+  -v "$PWD":/home/jovyan/work \
+  quay.io/jupyter/pyspark-notebook:latest
+
+# Get the Jupyter URL with the access token
+docker logs pyspark-lab 2>&1 | grep -E "http://127.0.0.1:8888"
 ```
+
+Open the printed URL in your browser. Your local `~/lesson2-2` is mounted at `/home/jovyan/work` inside the container, so any notebooks/scripts you save there live on your host machine.
+
+> The full `spark-tutorial` stack (Kafka + PostgreSQL + log-generator) is overkill for Sessions 1 and most of Session 2 — we only start it at the very end in Section 2.5, as a preview for Lesson 2-3.
 
 ---
 

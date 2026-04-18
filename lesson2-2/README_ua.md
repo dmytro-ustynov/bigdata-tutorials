@@ -127,16 +127,25 @@ spark-shell --version
 pyspark --version
 ```
 
-### Шлях C — Контейнеризований Spark (Windows-користувачі з Docker, або хто не любить встановлень)
+### Шлях C — Окремий контейнер Jupyter+Spark (Windows-користувачі з Docker, або хто не любить встановлень)
 
-Клонуйте репозиторій [`spark-tutorial`](https://github.com/dmytro-ustynov/spark-tutorial) і використайте його образ Jupyter+Spark. Глибше попрацюєте з ним у Занятті 2-3.
+Використайте офіційний образ **`quay.io/jupyter/pyspark-notebook`** від Jupyter Project — один контейнер з передвстановленими Python, Java, Spark та Jupyter Lab (~1 ГБ). Без Kafka, Postgres та інших зайвих компонентів, які поки не потрібні.
 
 ```bash
-git clone https://github.com/dmytro-ustynov/spark-tutorial.git
-cd spark-tutorial
-docker compose up -d jupyter
-# Відкрийте http://localhost:8888 у браузері
+mkdir -p ~/lesson2-2 && cd ~/lesson2-2
+
+docker run -d --name pyspark-lab \
+  -p 8888:8888 -p 4040:4040 \
+  -v "$PWD":/home/jovyan/work \
+  quay.io/jupyter/pyspark-notebook:latest
+
+# Отримати URL Jupyter з access-token'ом
+docker logs pyspark-lab 2>&1 | grep -E "http://127.0.0.1:8888"
 ```
+
+Відкрийте надрукований URL у браузері. Ваша локальна `~/lesson2-2` змонтована як `/home/jovyan/work` всередині контейнера, тож будь-які notebook'и/скрипти, які ви там збережете, залишатимуться на вашій машині.
+
+> Повний стек `spark-tutorial` (Kafka + PostgreSQL + генератор логів) — це надлишок для Сесії 1 і більшості Сесії 2; ми запускаємо його тільки в самому кінці у розділі 2.5 як прев'ю до Заняття 2-3.
 
 ---
 
