@@ -15,3 +15,5 @@
 [Practical 2.2](lesson2-2/README.md) - Setting Up Apache Spark (4 hours, 6 pts)
 
 [Practical 2.3](lesson2-3/README.md) - Cybersecurity Analytics with Apache Spark (6 hours) — hosted in [spark-tutorial](https://github.com/dmytro-ustynov/spark-tutorial)
+
+[Control Work](control-work/README.md) - Exam question pool (30 questions: 10 easy, 10 medium, 10 hard) covering Modules 1 & 2 · [Ukrainian version](control-work/README_ua.md)
